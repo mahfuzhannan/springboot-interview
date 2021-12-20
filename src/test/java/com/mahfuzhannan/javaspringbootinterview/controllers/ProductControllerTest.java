@@ -59,6 +59,7 @@ class ProductControllerTest {
                 .param("category", "cake")
         )
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.name").value(equalTo("Cake - Lemon Chiffon")));
+                .andExpect(jsonPath("$").value(hasSize(1)))
+                .andExpect(jsonPath("$[0].name").value(equalTo("Cake - Lemon Chiffon")));
     }
 }
