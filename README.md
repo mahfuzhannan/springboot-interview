@@ -13,3 +13,6 @@ however only one is displayed - investigate the cause of the problem and fix
 ## Problem 3 (React)
 As part of our UI upgrade we are building our frontend in ReactJS, however it's not loading
 properly... please can you investigate
+
+The Demo Products page should look like this
+![alt text](./images/ui-example.png)
